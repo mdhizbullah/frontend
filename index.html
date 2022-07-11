@@ -15,68 +15,65 @@
     <link rel="stylesheet" href="all.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-icons.css">
 
     <!-- Custom styles for this template-->
 
 </head>
 
-<body class="container-fluid">
-    <div class="row">
-        <div class="fixed-top">
-            <nav class="nav nav-pills flex-column flex-sm-row">
-              <div class="row">
-                  <div class="flex-sm-fill text-sm-center">
-                        <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cari</button>
-                        </div>
-                  </div>
-                  <a class="flex-sm-fill text-sm-center nav-link" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                    </svg>
-                  </a>
-                  <a class="flex-sm-fill text-sm-center nav-link" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
-                  </a>
-              </div>
-            </nav>
-        </div>
-    </div>
-    <div navbar-title=""></div>
-		<div class="fixed-top">
-			<div class="row card mb-3">
-			   <ul class="nav nav-pills nav-fill">
-					<li class="nav-item col-9">
-						<a class="nav-link">
-							<input type="search" class="form-control placeholder="Cari makanan &amp; minuman...">
-						</a>
-					</li>
-					<li class="nav-item col-1 mt-1">
-					  <button type="button" class="nav-link btn btn-outline-primary position-relative">
-						<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-					  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+	<!-- navbar -->
+	<div class="fixed-top">
+		<div class="row card mb-3">
+		   <ul class="nav nav-pills nav-fill">
+				<li class="nav-item col-9">
+					<a class="nav-link">
+						<input type="search" class="form-control placeholder="Cari makanan &amp; minuman...">
+					</a>
+				</li>
+				<li class="nav-item col-1 mt-1">
+				  <button type="button" class="nav-link btn btn-outline-primary position-relative">
+					<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+				 		 <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+					</svg>
+					<span class="position-absolute top-0 start-90 badge rounded-pill bg-danger">
+					99+
+					<span class="visually-hidden">unread messages </span>
+				  </span>
+				  </button>	
+				</li>
+				<li class="nav-item col-1 mt-1">
+					<button class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+						      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
 						</svg>
-						<span class="position-absolute top-0 start-90 badge rounded-pill bg-danger">
-						99+
-						<span class="visually-hidden">unread messages </span>
-					  </span>
-					  </button>	
-					</li>
-					<li class="nav-item col-1 mt-1">
-						<button class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
-							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
-                            </svg>
-						</button>
-					</li>
-				</ul>
-			</div>
+					</button>
+				</li>
+			</ul>
 		</div>
+	</div>
 
-
+<!-- footer-->
+	<div class="fixed-bottom">
+		<div class="row card mb-3">
+		   <ul class="nav nav-pills nav-fill">
+				<li class="nav-item col-1 mt-1">
+					<button class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+						<i class="bi bi-egg-fried"></i>
+					</button>
+				</li>		     
+				<li class="nav-item col-1 mt-1">
+					<button class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+						<i class="bi bi-cup-straw"></i>
+					</button>
+				</li>
+				<li class="nav-item col-1 mt-1">
+					<button class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+						<i class="bi bi-receipt-cutoff"></i>
+					</button>
+				</li>
+			</ul>
+		</div>
+	</div>
     <!-- Bootstrap core JavaScript-->
     <script src="bootstrap.bundle.min.js"></script>
 
